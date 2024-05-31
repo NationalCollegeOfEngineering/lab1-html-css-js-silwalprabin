@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            
+        }
+        div, header, section, footer, article,aside {
+            border: 1px solid black;
+
+        }
+        header.top-header {
+            display: flex;
+            justify-content: space-between;
+            padding: 0px 40px;
+            margin-top: 20px;
+        }
+        header.top-header ul {
+            display: flex;
+            list-style-type: none;
+            gap: 15px;
+        }
+        header.top-header li {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        section {
+            display: flex;
+            justify-content: space-between;
+        }
+        article, aside {
+            flex: 1;
+        }
+        header.top-header {
+                height:100px
+            }
+
+        @media screen and (max-width: 768px){
+            ul {
+                flex-direction: column;
+            
+            }
+            header.top-header {
+                height: auto;
+            }
+            section {
+                flex-direction: column;
+            }
+            article {
+                order: 1;
+            }
+        }
+</style>
+</head>
+<body>
+    <header class="top-header" id="asdasd">
+        <div> LOGO </div>
+        <ul>
+            <li>Home</li>
+            <li>About Us</li>
+            <li style="order:-1">Contact Us</li>
+        </ul>
+    </header>
+    <section style="min-height:400px;">
+        <article>
+            <ol style="margin-left: 20px;">
+                <li>One</li>
+                <li>Two</li>
+              </ol>
+
+              <ul style="margin-left: 20px;">
+                <li>One</li>
+                <li>Two</li>
+              </ul>
+              
+              <div>
+                x<sub>1</sub><sup>2</sup>
+                <sub>text</sub> subscript
+                <sup>text</sup> superscript
+                <del>text</del> deleted text
+              </div>
+              <div>
+                Italics
+                <i>text</i>
+                <em>text</em>
+              </div>
+
+              <table border cellspacing="5" cellpadding="10"> 
+                <caption>People on the team</caption> 
+                <tr> 
+                    <th>Name</th> 
+                    <th>Position</th> 
+                </tr> 
+                <tr> 
+                    <td>Mary</td> 
+                    <td>Analyst</td> 
+                </tr> 
+                 <tr> 
+                     <td>John</td> 
+                     <td>Technician</td> 
+                 </tr> 
+             </table> 
+
+             <p>
+                Call me Ishmael. Some years ago —<span style="font-style: italic;">never mind how long precisely</span>
+                 — having little or no money in my purse, and nothing particular to interest me on shore,
+            </p>
+        </article>
+        <aside>
+           Sidebar
+        </aside>
+    </section>
+    <footer style="height:200px;">
+        Footer
+    </footer>
+</body>
+</html>
